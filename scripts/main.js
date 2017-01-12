@@ -10,8 +10,17 @@ var Car = (function () {
     };
     return Car;
 }());
+function info(person) {
+    return person.fname;
+}
+//arrow function || optional argument
+var squareIt;
+squareIt = function (rect) {
+    console.log('h: ', rect.h, 'w: ', rect.w);
+};
 window.onload = function () {
-    var car = new Car(1000);
-    car.start();
-    car.stop();
+    // var car = new Car(1);
+    // squareIt({h: 10});
+    // car.stop();
+    info({ fname: 'bhushan', age: 25 });
 };
